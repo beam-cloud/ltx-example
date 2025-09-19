@@ -101,6 +101,10 @@ class Outputs(schema.Schema):
     on_start=on_start,
     outputs=Outputs,
     checkpoint_enabled=True,
+    env={
+        "HF_HUB_DISABLE_XET": "1",
+        "HF_HUB_ENABLE_HF_TRANSFER": "0",
+    },
 )
 def handler(
     context,
