@@ -100,6 +100,7 @@ class Outputs(schema.Schema):
     gpu="H100",
     on_start=on_start,
     outputs=Outputs,
+    checkpoint_enabled=True,
 )
 def handler(
     context,
